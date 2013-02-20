@@ -1,0 +1,11 @@
+{
+    "expr"   : true,
+    "evil"   : true,
+    "node"   : true,
+    "undef"  : true,
+    "strict" : false,
+    "browser": true,
+    "sub"    : true,
+    "unused" : true,
+    "indent" : 4
+}
