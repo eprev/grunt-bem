@@ -142,7 +142,7 @@ grunt.initConfig({
             verbosity: 'warn'
         },
         'bundles': {
-            targets: 'desktop.bundles touch.bundles
+            targets: 'desktop.bundles touch.bundles'
         },
         'bundles-forced': {
             targets: 'desktop.bundles touch.bundles',
