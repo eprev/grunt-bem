@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 test/fixtures/*/*.bundles/*/*.css
 test/fixtures/*/*.bundles/*/*.deps.js
+test/fixtures/*/.bem/cache
