@@ -81,6 +81,13 @@ Default value: `info`
 
 Verbosity level (silly, verbose, info, warn, debug, error).
 
+#### options.targets
+
+Type: `String`
+Default value: `target's name`
+
+Build targets
+
 ### Usage Examples
 
 #### Default Options
@@ -115,10 +122,42 @@ grunt.initConfig({
 })
 ```
 
+#### Advanced Example
+
+```js
+grunt.initConfig({
+    watch: {
+        bem: {
+            files: ['bem-project/*.bundles/*/*.bemjson.js'],
+            tasks: ['bem:bundles'],
+            options: {
+                interrupt: true
+            }
+        }
+    },
+    bem: {
+        options: {
+            require: 'bem-project/node_modules/bem',
+            root: 'bem-project',
+            verbosity: 'warn'
+        },
+        'bundles': {
+            targets: 'desktop.bundles touch.bundles
+        },
+        'bundles-forced': {
+            targets: 'desktop.bundles touch.bundles',
+            forced: true
+        }
+    }
+});
+
+grunt.registerTask('default', ['bem:bundles-forced']);
+```
+
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
-* 2013-02-20  v0.1.0 First official release.
+* 2013-02-20  v0.1.0  First official release.
