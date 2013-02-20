@@ -1,4 +1,4 @@
-# grunt-bem
+# grunt-bem [![Build Status](https://travis-ci.org/eprev/grunt-bem.png)](https://travis-ci.org/eprev/grunt-bem)
 
 > Run [`bem make`](https://github.com/bem/bem-tools) using BEM API.
 
@@ -26,14 +26,14 @@ In your project's Gruntfile, add a section named `bem` to the data object passed
 
 ```js
 grunt.initConfig({
-  bem: {
-    options: {
-      // Task-specific options go here.
-    },
-    target: {
-      // Target-specific options go here.
-    },
-  },
+    bem: {
+        options: {
+            // Task-specific options go here.
+        },
+        target: {
+            // Target-specific options go here.
+        }
+    }
 })
 ```
 
