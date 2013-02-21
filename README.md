@@ -86,7 +86,7 @@ Verbosity level (silly, verbose, info, warn, debug, error).
 Type: `String`
 Default value: `target's name`
 
-Build targets
+Build targets.
 
 ### Usage Examples
 
