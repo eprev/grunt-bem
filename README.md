@@ -81,7 +81,7 @@ Default value: `info`
 
 Verbosity level (silly, verbose, info, warn, debug, error).
 
-#### options.targets
+#### options.targets, target
 
 Type: `String`
 Default value: `target's name`
