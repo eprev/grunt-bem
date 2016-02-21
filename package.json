@@ -14,10 +14,12 @@
     "bugs": {
         "url": "https://github.com/eprev/grunt-bem/issues"
     },
-    "licenses": [{
-        "type": "MIT",
-        "url": "https://github.com/eprev/grunt-bem/blob/master/LICENSE.md"
-    }],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/eprev/grunt-bem/blob/master/LICENSE.md"
+        }
+    ],
     "main": "Gruntfile.js",
     "engines": {
         "node": ">= 0.8.0"
@@ -33,9 +35,11 @@
         "bem": "~0.5.25"
     },
     "peerDependencies": {
-        "grunt": "~0.4.0"
+        "grunt": ">=0.4.0"
     },
     "keywords": [
-        "gruntplugin", "bem", "bem-tools"
+        "gruntplugin",
+        "bem",
+        "bem-tools"
     ]
 }
